@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Baratie</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: black;
+            color: #2f2f;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            height: 80px;
+            overflow: hidden;
+            
+        }
+
+        header nav a {
+            padding-right: 10px;
+            text-decoration: none;
+            color: #2f2f;
+            font-weight: bold;
+            margin: 0 ;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .tblogo{
+            display: flex;
+            height: 120px;
+
+        }
+
+        .ltext{
+            height: 95px;
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 100px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #2f2f;
+        }
+
+        .banner {
+            background-size: cover;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-top: 1%;
+            border-radius: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            background: url('img1.jpg') no-repeat center center/cover;
+            color: white;
+            height: 300px;
+            text-align: center;
+        }
+
+        .banner-content {
+            max-width: 50%;
+        }
+
+        .banner-content h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        .banner-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .banner-content a {
+            background: transparent;
+            color: rgb(0, 0, 0);
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: solid;
+            border-color: #000000;
+            transition:  0.3s ease;
+        }
+
+        .banner-content a:hover {
+            background: lightblue;
+        }
+
+        .features {
+            display: flex  ;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 15px;
+            background: #f9f9f9;
+        }
+
+        .feature {
+                width:max-content;
+                height: max-content;
+                background: #e5e5e5 !important;
+                border: none !important;
+                box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                            inset 4px 4px 10px grey;
+                border-radius: 20px;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                margin:none;
+                transition: .2s;
+        }
+        .feature :hover{
+                box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                            inset -4px -4px 10px grey;  
+                transition: .2s; 
+            }
+
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: black;
+            text-align: center;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: grey;
+            text-align: center;
+        }
+
+        footer {
+            background: white;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 0;
+            margin-top: 180px;
+        }
+
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+
+            .banner-content {
+                max-width: 100%;
+            }
+
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .feature {
+                flex: none;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="tblogo">
+            <img src="logo.jpeg" href="home.html" alt="The Baratie Logo">
+            <div class="ltext"><h1 >The Baratie</h1></div>
+        </div>
+        
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index2.html">Menu</a>
+                <a href="index3.html">Contact</a>
+                <a href="index4.html">Administration</a>
+           </nav>
+        
+    </header>
+    <hr width="95%"> 
+    <section id="home">
+    <div class="banner">
+        <div class="banner-content"> 
+            <h1>Welcome to THE BARATIE</h1>
+            <p>Where the Ocean Meets Your Plate, and Every Meal is an Adventure.</p>
+            <a href="#features">Explore Now</a>
+        </div>
+    </div>
+    </section>
+    <section id="features" class="features">
+        <div class="feature">
+            <img src="img2.png" alt="Stunning Ocean Views">
+            <h3>Stunning Ocean Views</h3>
+            <p>Dine with breathtaking panoramic views of the ocean, where every meal is paired with stunning sunsets and serene seascapes.</p>
+        </div>
+        <div class="feature">
+            <img src="img3.png" alt="Unique Nautical Ambiance">
+            <h3>Unique Nautical Ambiance</h3>
+            <p>Immerse yourself in a cozy maritime ambiance, complete with elegant nautical decor and the charm of the sea.</p>
+        </div>
+        <div class="feature">
+            <img src="img3.png" alt="Signature Seafood">
+            <h3>Signature Seafood</h3>
+            <p>Savor the freshest catch, beautifully displayed and expertly prepared to celebrate the flavors of <br> the ocean.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed by : Kathiresh M(24901022)</p>
+    </footer>
+
+
+
+
